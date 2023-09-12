@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Syncopate:wght@400;700&display=swap");
+
+:root {
+  --color-primary: #d53f41;
+  --color-dark: #626262;
+  --color-darker: #464646;
+  --color-light: #dbd8d6;
+  --color-lighter: #f5f0ec;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  background-color: var(--color-lighter);
+  color: var(--color-darker);
+}
+.wrapper {
+  margin: 0 5vh;
+}
