@@ -10,6 +10,11 @@ module.exports = {
         "custom-light": "#dbd8d6",
         "custom-lighter": "#f5f0ec",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans"],
+        baijamjuree: ["Bai Jamjuree", "sans"],
+        syncopate: ["Syncopate", "sans"],
+      },
     },
   },
   plugins: [],

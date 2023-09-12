@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav className="navbar wrapper flex justify-between items-start py-5 lowercase text-[1.5rem]">
+    <nav className="navbar wrapper flex justify-between items-start py-8 px-[4.7rem] lowercase text-[1.5rem]">
       {/* Nav Links */}
       <ul className="links flex flex-col ">
         <Link to="/fetured">Fetured</Link>

@@ -33,6 +33,9 @@ body {
 .wrapper {
   margin: 0 5vh;
 }
+section {
+  padding: 10vh 0;
+}
 .navbar {
   font-family: "Syncopate", sans-serif;
 }
