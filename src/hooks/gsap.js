@@ -2,6 +2,28 @@ import { useEffect } from "react";
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+// navbar animation
+export const useDownStager = (items, delay = 0) => {
+  useEffect(() => {
+    const el = items.map((item) => item.current);
+    gsap.fromTo(
+      el,
+      {
+        y: "-100%",
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.5,
+        stagger: 0.1,
+        ease: Expo.easeInOut,
+        delay,
+      }
+    );
+  }, []);
+};
+
 gsap.registerPlugin(ScrollTrigger);
 
 export const useGsapShutterUnveil = (item, delay = 0, trig) => {
