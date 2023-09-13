@@ -47,3 +47,25 @@ export const useGsapShutterUnveil = (item, delay = 0, trig) => {
     );
   }, []);
 };
+
+// Hero photo animation
+export const useGsapPhotoDownFall = (items, delay) => {
+  useEffect(() => {
+    const el = items.map((item) => item.current);
+    gsap.fromTo(
+      el,
+      {
+        y: "-100vh",
+        scale: 0,
+      },
+      {
+        y: 0,
+        scale: 1,
+        duration: 2,
+        stagger: 0.2,
+        delay,
+        ease: Expo.easeInOut,
+      }
+    );
+  }, []);
+};

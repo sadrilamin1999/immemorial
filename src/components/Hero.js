@@ -1,13 +1,22 @@
 import { useRef } from "react";
-import { useGsapShutterUnveil } from "../hooks/gsap";
+import { useGsapShutterUnveil, useGsapPhotoDownFall } from "../hooks/gsap";
 
 const Hero = () => {
   const heroRef = useRef(null);
   const shutter1 = useRef(null);
   const shutter2 = useRef(null);
 
+  const photo1Ref = useRef(null);
+  const photo2Ref = useRef(null);
+  const photo3Ref = useRef(null);
+  const photo4Ref = useRef(null);
+  const photo5Ref = useRef(null);
+
+  const photoArr = [photo1Ref, photo2Ref, photo3Ref, photo4Ref, photo5Ref];
+
   useGsapShutterUnveil(shutter1, 0, heroRef);
   useGsapShutterUnveil(shutter2, 0.2, heroRef);
+  useGsapPhotoDownFall(photoArr, 3);
 
   return (
     <section
@@ -31,6 +40,7 @@ const Hero = () => {
       {/* Photos */}
       <div className="photos absolute top-0 left-0 bottom-0 right-0 z-[1] grid grid-cols-7 grid-rows-5 overflow-hidden">
         <div
+          ref={photo1Ref}
           className="photo h-full w-full bg-center bg-cover bg-no-repeat col-span-1 row-span-1 col-start-5 row-start-1"
           style={{
             backgroundImage:
@@ -38,6 +48,7 @@ const Hero = () => {
           }}
         ></div>
         <div
+          ref={photo2Ref}
           className="photo h-full w-full bg-center bg-cover bg-no-repeat col-span-1 row-span-1 col-start-4 row-start-3"
           style={{
             backgroundImage:
@@ -45,6 +56,7 @@ const Hero = () => {
           }}
         ></div>
         <div
+          ref={photo3Ref}
           className="photo h-full w-full bg-center bg-cover bg-no-repeat col-span-1 row-span-1 col-start-1 row-start-2"
           style={{
             backgroundImage:
@@ -52,6 +64,7 @@ const Hero = () => {
           }}
         ></div>
         <div
+          ref={photo4Ref}
           className="photo h-full w-full bg-center bg-cover bg-no-repeat col-span-1 row-span-1 col-start-2 row-start-5"
           style={{
             backgroundImage:
@@ -59,6 +72,7 @@ const Hero = () => {
           }}
         ></div>
         <div
+          ref={photo5Ref}
           className="photo h-full w-full bg-center bg-cover bg-no-repeat col-span-1 row-span-1 col-start-7 row-start-4"
           style={{
             backgroundImage:
