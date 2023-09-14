@@ -1,5 +1,9 @@
 import { useRef } from "react";
-import { useGsapShutterUnveil, useGsapPhotoDownFall } from "../hooks/gsap";
+import {
+  useGsapShutterUnveil,
+  useGsapPhotoDownFall,
+  useGsapPhotoMove,
+} from "../hooks/gsap";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -16,7 +20,8 @@ const Hero = () => {
 
   useGsapShutterUnveil(shutter1, 0, heroRef);
   useGsapShutterUnveil(shutter2, 0.2, heroRef);
-  useGsapPhotoDownFall(photoArr, 3);
+  useGsapPhotoDownFall(photoArr, 2.5);
+  useGsapPhotoMove(photoArr, heroRef);
 
   return (
     <section

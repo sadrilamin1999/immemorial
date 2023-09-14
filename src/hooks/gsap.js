@@ -48,7 +48,7 @@ export const useGsapShutterUnveil = (item, delay = 0, trig) => {
   }, []);
 };
 
-// Hero photo animation
+// Hero photo fall down animation
 export const useGsapPhotoDownFall = (items, delay) => {
   useEffect(() => {
     const el = items.map((item) => item.current);
@@ -65,6 +65,29 @@ export const useGsapPhotoDownFall = (items, delay) => {
         stagger: 0.2,
         delay,
         ease: Expo.easeInOut,
+      }
+    );
+  }, []);
+};
+
+// use photo move animation
+export const useGsapPhotoMove = (items, trig) => {
+  useEffect(() => {
+    const el = items.map((item) => item.current);
+
+    gsap.fromTo(
+      el,
+      {
+        y: 0,
+      },
+      {
+        y: "-50%",
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          scrub: 1,
+          toggleActions: "play reverse play reverse",
+        },
       }
     );
   }, []);
