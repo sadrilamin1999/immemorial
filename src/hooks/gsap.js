@@ -81,7 +81,7 @@ export const useGsapPhotoMove = (items, trig) => {
         y: 0,
       },
       {
-        y: "-50%",
+        y: "-35%",
         ease: Expo.easeInOut,
         scrollTrigger: {
           trigger: trig.current,

@@ -64,9 +64,3 @@ section {
 .favourite-link a:hover::after {
   width: 100%;
 }
-
-/* .photos {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-} */
