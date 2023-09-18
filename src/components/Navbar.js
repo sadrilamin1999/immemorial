@@ -6,11 +6,11 @@ const Navbar = () => {
   const li1 = useRef(null);
   const li2 = useRef(null);
   const li3 = useRef(null);
-  const favRef = useRef(null);
+  const blogRef = useRef(null);
   const logoRef = useRef(null);
 
   const liArr = [li1, li2, li3];
-  const favArr = [favRef];
+  const favArr = [blogRef];
   const logoArr = [logoRef];
 
   useDownStager(liArr, 1);
@@ -40,8 +40,8 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div ref={favRef} className="favourite-link">
-        <Link to="/favourites">Favourites</Link>
+      <div ref={blogRef} className="favourite-link">
+        <Link to="/blog">Blog</Link>
       </div>
     </nav>
   );

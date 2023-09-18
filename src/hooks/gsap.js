@@ -230,3 +230,50 @@ export const useGsapFooterHeading = (item, trig) => {
     );
   }, []);
 };
+// Blog animation
+export const useGsapBlogeImage = (item) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: "-150%",
+      },
+      {
+        x: 0,
+        duration: 1.5,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: el,
+          start: "top center",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};
+export const useGsapBlogeRight = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: "150%",
+      },
+      {
+        x: 0,
+        duration: 1.5,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top center",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};

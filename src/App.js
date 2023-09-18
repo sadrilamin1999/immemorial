@@ -6,6 +6,7 @@ import Fetured from "./components/Fetured";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
+import Blog from "./components/Blog";
 
 const App = () => {
   useSmoothSscroll();
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/fetured" element={<Fetured />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </div>
