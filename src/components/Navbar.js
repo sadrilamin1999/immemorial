@@ -18,9 +18,9 @@ const Navbar = () => {
   useDownStager(favArr, 1.8);
 
   return (
-    <nav className="navbar wrapper flex justify-between items-start py-8 px-[4.7rem] lowercase text-[1.5rem]">
+    <nav className="navbar wrapper flex justify-between items-start py-8 px-[4.7rem] lowercase text-[1.5rem] font-syncopate">
       {/* Nav Links */}
-      <ul className="links flex flex-col ">
+      <ul className="links flex flex-col font-[700]">
         <li ref={li1}>
           <Link to="/fetured">Fetured</Link>
         </li>
@@ -40,7 +40,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div ref={blogRef} className="favourite-link">
+      <div ref={blogRef} className="favourite-link font-[700]">
         <Link to="/blog">Blog</Link>
       </div>
     </nav>

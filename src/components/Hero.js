@@ -43,7 +43,7 @@ const Hero = () => {
         ></span>
       </h1>
       {/* Photos */}
-      <div className="photos absolute top-0 left-0 bottom-0 right-0 z-[1] grid grid-cols-7 grid-rows-5 overflow-hidden">
+      <div className="wrapper photos absolute top-0 left-0 bottom-0 right-0 z-[1] grid grid-cols-7 grid-rows-5 overflow-hidden">
         <div
           ref={photo1Ref}
           className="photo h-full w-full bg-center bg-cover bg-no-repeat col-span-1 row-span-1 col-start-5 row-start-1"

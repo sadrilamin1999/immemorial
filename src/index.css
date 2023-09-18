@@ -34,14 +34,7 @@ body {
   margin: 0 5vh;
 }
 section {
-  padding: 10vh 1.6rem;
-}
-.navbar {
-  font-family: "Syncopate", sans-serif;
-}
-.links a,
-.favourite-link {
-  font-weight: 700;
+  padding: 10vh 4.7rem;
 }
 .links a,
 .favourite-link a {
