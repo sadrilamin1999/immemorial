@@ -138,3 +138,31 @@ export const useGsapFeturedShutterRightUnveil = (item, trig) => {
     );
   }, []);
 };
+
+// Gellary aniation
+export const useGsapGalleryImage = (item) => {
+  useEffect(() => {
+    const el = item.current;
+    gsap.fromTo(
+      el,
+      {
+        x: 0,
+        width: 0,
+      },
+      {
+        x: "30%",
+        width: "100%",
+        duration: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: el,
+          start: "top center",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse play",
+        },
+      }
+    );
+  }, []);
+};
+export const useGsapGalleryTitle = () => {};
+export const useGsapGalleryCategory = () => {};

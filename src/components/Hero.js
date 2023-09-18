@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="hero wrapper font-baijamjuree text-[15vw] uppercase text-center font-[700] leading-[1.2] text-custom-darker min-h-screen flex flex-col justify-center items-center relative"
+      className="hero wrapper  font-baijamjuree text-[15vw] uppercase text-center font-[700] leading-[1.2] text-custom-darker min-h-screen flex flex-col justify-center items-center relative"
     >
       <h1 className="ethereal relative">
         Ethereal
