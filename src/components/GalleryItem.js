@@ -11,8 +11,8 @@ const GalleryItem = ({ image, title, category }) => {
   const categoryRef = useRef(null);
 
   useGsapGalleryImage(imageRef);
-  useGsapGalleryTitle(titleRef);
-  useGsapGalleryCategory(categoryRef);
+  useGsapGalleryTitle(titleRef, imageRef);
+  useGsapGalleryCategory(categoryRef, imageRef);
   return (
     <div className="gallery-item relative w-1/2">
       <h1

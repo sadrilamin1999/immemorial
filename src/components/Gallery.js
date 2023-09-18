@@ -31,7 +31,9 @@ const images = [
 const Gallery = () => {
   return (
     <div className="gallery">
-      <SectionTitle titleText="Gallery" />
+      <h2 className="section-title  wrapper pb-[5vh]  pl-[1.6rem] lowercase font-syncopate text-custom-primary text-[1.5rem] font-[700]">
+        Gallery
+      </h2>
       <div className="gallery-wrapper grid grid-cols-1 justify-items-center gap-[10vw] p-[10vw] bg-custom-primary">
         {images.map((image) => (
           <GalleryItem

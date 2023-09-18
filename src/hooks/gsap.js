@@ -132,7 +132,7 @@ export const useGsapFeturedShutterRightUnveil = (item, trig) => {
           trigger: trig.current,
           start: "top center",
           end: "bottom center",
-          toggleActions: "play reverse play reverse play",
+          toggleActions: "play reverse play reverse",
         },
       }
     );
@@ -158,11 +158,75 @@ export const useGsapGalleryImage = (item) => {
           trigger: el,
           start: "top center",
           end: "bottom top",
-          toggleActions: "play reverse play reverse play",
+          toggleActions: "play reverse play reverse",
         },
       }
     );
   }, []);
 };
-export const useGsapGalleryTitle = () => {};
-export const useGsapGalleryCategory = () => {};
+export const useGsapGalleryTitle = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+    gsap.fromTo(
+      el,
+      {
+        x: "30%",
+      },
+      {
+        x: 0,
+        duration: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top center",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};
+export const useGsapGalleryCategory = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: "-100vw",
+      },
+      {
+        x: 0,
+        duration: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top center",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};
+// footer animation
+export const useGsapFooterHeading = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+    gsap.fromTo(
+      el,
+      {
+        y: "-150%",
+      },
+      {
+        y: 0,
+        duration: 1.5,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          toggleActions: "play",
+        },
+      }
+    );
+  }, []);
+};
