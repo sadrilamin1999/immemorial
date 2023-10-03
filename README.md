@@ -26,7 +26,6 @@ Immerse yourself in a nostalgic journey down memory lane with Immemorial, a web 
 
 - **Data Fetching**: Retrieving nostalgic content from external sources and APIs.
 
-- **CSS Animation**: Enhancing the user experience with nostalgic CSS animations.
 
 ## Installation
 
