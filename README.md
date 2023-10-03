@@ -40,16 +40,16 @@ To run Immemorial locally, follow these steps:
 2. Navigate to the project directory:
    `
    cd immemorial
-`
-3. Install dependencies:
+   `
+4. Install dependencies:
    `
    npm install
-
-`
+   `
 4. Start the development server:
-`
-npm start
-`
-5. Open your browser and access the application at `http://localhost:3000`.
+   `
+   npm start
+   `
+6. Open your browser and access the application at `http://localhost:3000`.
+   
 ## Conclusion
 Immemorial captures the spirit and memories of the '90s, offering a nostalgic experience like no other. Dive into this retro world and relive the iconic moments that defined an unforgettable era. Immemorial invites you to reminisce, explore, and celebrate the '90s with open arms.
