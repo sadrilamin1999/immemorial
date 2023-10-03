@@ -49,6 +49,7 @@ To run Immemorial locally, follow these steps:
    `
    npm start
    `
+   
 6. Open your browser and access the application at `http://localhost:3000`.
    
 ## Conclusion
